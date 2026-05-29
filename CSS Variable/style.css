@@ -1,0 +1,12 @@
+:root{
+    --primary: #ffff00;
+    --text: #ff0000;
+}
+
+h1{
+    color: var(--primary);
+}
+
+p{
+    color: var(--text)
+}
