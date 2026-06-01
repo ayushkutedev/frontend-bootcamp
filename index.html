@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 17 - Apple</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="logo">Apple</h1>
+        <span class="tagline">Designed by Apple in California</span>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#iphone17">iPhone 17</a>
+        <a href="#features">Features</a>
+        <a href="#specs">Specs</a>
+        <a href="#buy">Buy</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="iphone17" class="hero-section">
+        <div class="hero-image">
+            <img src="IPhone17.jpg" alt="iPhone 17" class="iphone-img" />
+        </div>
+
+        <div class="hero-content">
+            <span class="new-badge">New - September 2025</span>
+            <h1 class="product-title">iPhone 17</h1>
+            <h2 class="tagline-large">Hello, Apple Intelligence.</h2>
+            <p class="description">Heat-Forged Aluminum Unibody Design for Exceptional Pro Capability</p>
+            
+            <div class="price-section">
+                <span class="price">₹79,000</span>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="scrollToSection('buy')">Buy Now</button>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <h2 class="section-title">Why iPhone 17</h2>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Pro Camera</h3>
+                <p>48MP main camera with 5x optical zoom</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>A19 Pro Chip</h3>
+                <p>Fastest Chip Ever in a Smartphone</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>All Day Battery</h3>
+                <p>Up to 27 hours video playback</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Titanium Design</h3>
+                <p>Strongest iPhone ever. Light as air.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Order Section -->
+    <section id="buy" class="preorder-section">
+        <h2 class="section-title">Pre-Order iPhone 17</h2>
+
+        <form class="preorder-form" id="preorderForm">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input 
+                    type="text" 
+                    id="fullname" 
+                    placeholder="Enter your full name"
+                    required
+                />
+                <span class="error-msg" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="Enter your email"
+                    required
+                />
+                <span class="error-msg" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    placeholder="Enter your phone number"
+                    required
+                />
+                <span class="error-msg" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="color">Choose Color</label>
+                <select id="color" required>
+                    <option value="">Select a color</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Natural Titanium">Natural Titanium</option>
+                </select>
+                <span class="error-msg" id="colorError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">Pre-Order Now</button>
+            <button type="reset" class="btn btn-secondary btn-reset">Clear Form</button>
+        </form>
+
+        <div class="success-message" id="successMessage" style="display: none;">
+            ✅ Pre-order request saved! Check your email for confirmation.
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Apple Inc. All Rights Reserved</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#support">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
